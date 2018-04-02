@@ -12,7 +12,7 @@ mongo = MongoClient("mongodb://mongo", connect=False)
 db = mongo[ns]
 
 nodes = [
-    os.environ['steem_node'] if 'steem_node' in os.environ else 'localhost:5090',
+    os.environ['steem_node'] if 'steem_node' in os.environ else 'https://api.steemit.com',
 ]
 s = Steem(nodes)
 

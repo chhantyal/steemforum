@@ -677,7 +677,6 @@ def process_rewards_pools():
     db.status.update({'_id': 'recent_claims'}, {
                      '$set': {'value': recent_claims}}, upsert=True)
 
-<<<<<<< Updated upstream
 
 def process_platform_history():
     l('platform account')

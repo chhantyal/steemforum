@@ -6,6 +6,8 @@ RUN apt-get update && \
 ADD ./requirements.txt /
 RUN pip3 install -r requirements.txt
 
+COPY . /src
+
 WORKDIR /src/
 
 CMD ["python", "/src/main.py"]
